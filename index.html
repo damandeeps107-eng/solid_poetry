@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLID POETRY™ — Luxurious Home</title>
+  <meta name="description" content="Solid Poetry — A house of curated marble, granite and bespoke furniture. The home, reimagined as heirloom.">
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans for clean typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fullscreen Luxury Viewport -->
+  <main class="hero-viewport">
+    
+    <!-- Background Image Slider -->
+    <div class="bg-slider-container">
+      <div class="bg-slide active" style="background-image: url('assets/stone_relief_mural.jpg');"></div>
+      <div class="bg-slide" style="background-image: url('assets/hero_bg.jpg');"></div>
+      <div class="bg-slide" style="background-image: url('assets/travertine_table.jpg');"></div>
+      <div class="bg-slide" style="background-image: url('assets/nero_console.jpg');"></div>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+      <div class="nav-container">
+        <!-- Clean Integrated Logo -->
+        <a href="#" class="brand-logo">
+          <img src="assets/logo.png" alt="SOLID POETRY™ Logo" class="brand-logo-img">
+        </a>
+
+        <nav class="nav-links">
+          <a href="#" class="nav-link active">Home</a>
+          <a href="#" class="nav-link">Stone Collections</a>
+          <a href="#" class="nav-link">Gallery</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="tel:+917743000844" class="phone-link">
+            +91 77430 00844
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Animated Center Left Hero Content -->
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="anim-line delay-1">The home,</span>
+        <span class="anim-line delay-2">reimagined as</span>
+        <span class="anim-line delay-3">heirloom.</span>
+      </h1>
+
+      <p class="hero-subtitle anim-fade delay-4">
+        A house of curated marble, granite and bespoke furniture — for those who consider every surface a quiet act of devotion.
+      </p>
+
+      <div class="hero-buttons anim-fade delay-5">
+        <a href="#" class="btn btn-primary" id="exploreBtn">
+          EXPLORE COLLECTIONS <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#" class="btn btn-secondary" id="atelierBtn">
+          VISIT THE ATELIER
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Simple Contact / Inquiry Modal -->
+  <div class="modal-overlay" id="inquiryModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <img src="assets/logo.png" alt="SOLID POETRY" class="modal-logo">
+      <p class="modal-sub">Schedule a Private Viewing or Inquire Bespoke Furniture</p>
+
+      <form class="modal-form" id="contactForm">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="e.g. Vikramaditya Singhania" required>
+        </div>
+        <div class="form-group">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-group">
+          <label>Inquiry Message</label>
+          <textarea rows="3" placeholder="Tell us about your stone furniture requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full">SEND INQUIRY</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
